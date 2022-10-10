@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">What about the course?</h1>
+    </div>
+    <div class="container">
+        <form action="" method="post">
+            <legend class="d-flex-col">
+                <div class="d-flex-row questionbox">
+                    <label for="completeCheckbox">Complete the course?</label>
+                    <input value="completed" class="checkbox" type="checkbox" name="testCheckboxes" id="completeCheckbox" onchange="check(this)">
+                </div>
+              <div class="d-flex-row questionbox">
+                <label for="likedCurse">Do you liked?</label>
+                <input value="likedCurse" class="checkbox" type="checkbox" name="testCheckboxes" id="likedCurse" onchange="check(this)">
+              </div>
+              <div class="d-flex-row questionbox">
+                <label for="learnSomething">Do you learned something?</label>
+                <input value="learnSomething" class="checkbox" type="checkbox" name="testCheckboxes" id="learnSomething" onchange="check(this)">
+              </div>
+
+              <div class="d-flex-row questionbox">
+                <label for="c1">c1?</label>
+                <input value="c1" class="c" type="checkbox" name="c1" id="c1" onchange="check2(this)">
+              </div>
+              <div class="d-flex-row questionbox">
+                <label for="c2">c2?</label>
+                <input value="c2" class="c" type="checkbox" name="c2" id="c2" onchange="check2(this)">
+              </div>
+              <div class="d-flex-row questionbox">
+                <label for="c3">c3?</label>
+                <input value="c3" class="c" type="checkbox" name="c3" id="c3" onchange="check2(this)">
+              </div>
+
+            </legend>
+        </form>
+    </div>
+   <script src="logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+:root{
+    --primary-color: #053c5e;
+    --background-color: #DCD6F7;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.container{
+    width:80%;
+    max-width:760px;
+    margin:3em auto;   
+}
+
+.d-flex-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.d-flex-col{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:1em;
+}
+
+.questionbox{
+    padding:1em 1.5em;
+    border:2px solid var(--primary-color);
+    border-radius:1em;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.checkbox{
+    border:1px solid red;
+}
