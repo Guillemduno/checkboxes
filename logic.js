@@ -1,41 +1,26 @@
 
 
 
-function check(obj){
+function maxim_materies_visitant(container, numero_materies_seleccionables) {
 
-    let checkboxes      = document.getElementsByClassName('checkbox');
-    const qtty_boxes    = checkboxes.length;
- 
-    for (let index = 0; index < qtty_boxes; index++) {
-            checkboxes[index].checked = false;
-            // checkboxes[index].setAttribute('disabled','true');
-    }
-    // obj.removeAttribute('disabled');
-    obj.checked = true ;
-  
-    console.log(obj);
-    console.log("==============================================");
-}
+    const maxim_materies    = numero_materies_seleccionables;
+    const myContainer       = document.getElementById(container);
 
- let countCheckboxes = 0;
+    // Selecció tots checbox checked
+    let qtty_mat_selec = myContainer.querySelectorAll('input[type="checkbox"]:checked');
 
-function check2(){
-    let checkboxes      = document.getElementsByClassName('c');
-    const qtty_boxes    = checkboxes.length;
-    countCheckboxes;
-    const maxChecks= 2;
+    // Selecció tots checbox not checked
+    let qtty_mat_not_selec = myContainer.querySelectorAll('input[type="checkbox"]:not(:checked)');
 
-    for (let index = 0; index < qtty_boxes; index++) {
-        if (checkboxes[index].checked === true) {
-            countCheckboxes++;
-            if (countCheckboxes === maxChecks) {
-                console.log("Màxim checkboxes clicked");
-            }
+    if ( qtty_mat_selec.length >= maxim_materies) {
+        //console.log('No pots seleccionar més matèries....');
+
+        for (let i = 0; i < qtty_mat_not_selec.length; ++i) {
+            qtty_mat_not_selec[i].setAttribute('disabled', true);
         }
-        
+    } else {
+        for (let i = 0; i < qtty_mat_not_selec.length; ++i) {
+            qtty_mat_not_selec[i].removeAttribute('disabled', true);
+        }
     }
-
 }
-
-
-

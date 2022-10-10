@@ -11,8 +11,9 @@
     <div class="container">
         <h1 class="text-center">What about the course?</h1>
     </div>
+    <!-- CONTAINER 1 -->
     <div class="container">
-        <form action="" method="post">
+        <form id="form1" name="form1" action="" method="post" onclick="maxim_materies_visitant('form1', 4)">
             <legend class="d-flex-col">
                 <div class="d-flex-row questionbox">
                     <label for="completeCheckbox">Complete the course?</label>
@@ -27,23 +28,51 @@
                 <input value="learnSomething" class="checkbox" type="checkbox" name="testCheckboxes" id="learnSomething">
               </div>
 
-          <!--     <div class="d-flex-row questionbox">
-                <label for="c1">c1?</label>
-                <input value="c1" class="c" type="checkbox" name="c1" id="c1" onchange="check2(this)">
-              </div>
               <div class="d-flex-row questionbox">
-                <label for="c2">c2?</label>
-                <input value="c2" class="c" type="checkbox" name="c2" id="c2" onchange="check2(this)">
+                <label for="time">The time was apropied?</label>
+                <input value="time" class="checkbox" type="checkbox" name="testCheckboxes" id="time">
               </div>
-              <div class="d-flex-row questionbox">
-                <label for="c3">c3?</label>
-                <input value="c3" class="c" type="checkbox" name="c3" id="c3" onchange="check2(this)">
-              </div> -->
 
+              <div class="d-flex-row questionbox">
+                <label for="recomended">Do you recomended this course?</label>
+                <input value="recomended" class="checkbox" type="checkbox" name="testCheckboxes" id="recomended">
+              </div>
+          
             </legend>
         </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-   <script src="logic_2.js"></script>
+
+
+    <!-- CONTAINER 2 -->
+    <div class="container">
+      <form id="form2" name="form2" action="" method="post" onclick="maxim_materies_visitant('form2', 2)">
+          <legend class="d-flex-col">
+              <div class="d-flex-row questionbox">
+                  <label for="enjoy">Do you enjoyed?</label>
+                  <input value="completed" class="checkbox" type="checkbox" name="testCheckboxes" id="enjoy">
+              </div>
+            <div class="d-flex-row questionbox">
+              <label for="ontime">Do you finised on time?</label>
+              <input value="likedCurse" class="checkbox" type="checkbox" name="testCheckboxes" id="ontime">
+            </div>
+            <div class="d-flex-row questionbox">
+              <label for="repeated">Will you repeated this couse?</label>
+              <input value="learnSomething" class="checkbox" type="checkbox" name="testCheckboxes" id="repeated">
+            </div>
+
+            <div class="d-flex-row questionbox">
+              <label for="time">The time was apropied?</label>
+              <input value="time" class="checkbox" type="checkbox" name="testCheckboxes" id="time">
+            </div>
+
+            <div class="d-flex-row questionbox">
+              <label for="foryou">Is it for you?</label>
+              <input value="recomended" class="checkbox" type="checkbox" name="testCheckboxes" id="foryou">
+            </div>
+        
+          </legend>
+      </form>
+  </div>
+    <script src="logic.js"></script>
 </body>
 </html>
